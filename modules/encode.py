@@ -1,5 +1,3 @@
-import time
-
 def encode(raw_string):
 	enc=""
 	word_count = 1

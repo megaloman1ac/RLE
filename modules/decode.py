@@ -1,5 +1,3 @@
-import time
-
 def decode(raw_string):
 	dec=""
 	
