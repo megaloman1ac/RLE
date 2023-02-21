@@ -1,13 +1,14 @@
 from modules.encode import *
 from modules.decode import *
+from modules.console import *
+import os
 
 while(True):
-	print("Enter your word: ", end = "")
-	
-	inp = input()
+	os.system('clear')
+	inp = input("Enter your word: ")
 	
 	if inp == "exit" or inp == "Exit":
 		break
 	else:
-		print(encode(inp))
-		print(decode(encode(inp)))
+		write(encode(inp), decode(encode(inp)))
+	input()
