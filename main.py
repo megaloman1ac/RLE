@@ -1,14 +1,14 @@
 from modules.encode import *
 from modules.decode import *
 from modules.console import *
-import os
+from os import system
 
 while(True):
-	os.system('clear')
-	inp = input("Enter your word: ")
+	system('clear')
+	inp = scan();
 	
 	if inp == "exit" or inp == "Exit":
 		break
-	else:
+	elif inp != "nope":
 		write(encode(inp), decode(encode(inp)))
 	input()
